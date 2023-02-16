@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+    
+    <style>
+        html {
+            height: 740px;
+            width: 360px;
+        }
+        body {
+            background-color: #add8e6;
+        }
+
+        .meu_balao
+        {
+            position: relative;
+            top: 175px;
+            left: 25px;
+            animation: anima_balao 3s infinite alternate;
+            width: 250px;
+        }
+        
+        @keyframes anima_balao
+        {
+            0%   { top: -350px; }
+            100%  { left:  25px;  top: 175px;  }
+        }
+        
+</style>
+
+
+
+</head>
+<body>
+     
+    <img src="logoetexto.png" class="meu_balao">
+</body>
+</html>
