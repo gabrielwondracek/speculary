@@ -39,7 +39,7 @@ nav
     width: 100%;
     height: 60px;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between; 
     align-items: center;
     align-content: center;
     position: absolute;
@@ -58,8 +58,9 @@ nav
 }
 .direita
 {
+    margin-top: 18px;
     width: 33%;
-    height: 60px;
+    height: 40px;
     align-items: center;
     align-content: center;
     justify-content: right;
@@ -67,6 +68,7 @@ nav
 }
 .carrinho
 {
+    margin-right: 5px;
     width: 40px;
     height: 40px;
 }
@@ -100,8 +102,7 @@ nav
     position: absolute;
     width: 360px;
     height: 120px;
-    font-weight: 300;
-    font-size: 20px;
+    background-color: #093F61;
     background-image: url(images/lentes.jpg);
     top: 70px;
     border-top: 3px solid #093F61;
@@ -112,8 +113,6 @@ nav
 {
     width: 360px;
     height: 120px;
-    font-weight: 300;
-    font-size: 20px;
     background-color: #050505;
     position: absolute;
     opacity: 50%;
@@ -124,8 +123,6 @@ nav
 {
     width: 360px;
     height: 120px;
-    font-weight: 300;
-    font-size: 20px;
     background-color: #093f61;
     background-image: url(images/images\ \(1\).jpg);
     position: absolute;
@@ -148,10 +145,8 @@ nav
 {
     width: 360px;
     height: 120px;
-    font-weight: 300;
-    font-size: 20px;
     background-color: #093f61;
-    background-image: url(images/oculostela.png);
+    background-image: url(images/oculosdegrau.jpg);
     position: absolute;
     top: 370px;
     border-top: 3px solid #093F61;
@@ -171,9 +166,6 @@ nav
 {
     width: 360px;
     height: 120px;
-    color: #050505;
-    font-weight: 300;
-    font-size: 20px;
     background-color: #093f61;
     background-image: url(images/armaçao.jpg);
     position: absolute;
@@ -252,49 +244,49 @@ nav
 .seta
 {
     width: 20px;
+
 }
 
-/*CONFIGURAÇÃO DA NAVBAR DE BAIXO*/
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-/*NAVBAR DE BAIXO*/
-.navegacao
-{
+/* Configuração de tamanho, posicionamento e cor de fundo do footer. */
+footer{
     width: 360px;
-    height: 60px;
+    height: 70px;
     background-color: #093F61;
     position: relative;    
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
 }
-
-.navegacao ul
+/* Tamanho, posicionamento e cor de texto do footer. */
+.texto
+{
+    color: white;
+    font-weight: bolder;
+    opacity: 1;
+    top: 95px;
+    position: absolute;
+    z-index: 2;
+}
+/* Configurações geral do posicionamento dos ícones e texto do footer. */
+footer ul
 {
     display: flex;
-    margin-left: 0px;
-    padding-left: 0px;
-    width: 360px;
+    width: 300px;
 }
 
-.navegacao ul li
+/* Configuração de posicionamento dos ícones e texto do footer.. */
+footer ul li
 {
     position: relative;
     list-style: none;
-    width: 360px;
-    height: 50px;
+    width: 100px;
+    height: 60px;
     z-index: 1;
 }
 
-.navegacao ul li a
+/* Configuração de posicionamento específica dos ícones do footer. */
+footer ul li a
 {
-    height: 70px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -304,28 +296,29 @@ footer {
     text-align: center;
     font-weight: 500;
 }
-
-.navegacao ul li a .icon
+/* Configuração de tamanho e cor específica dos ícones do footer. */
+footer ul li a .icon
 {
     position: relative;
     display: block;
-    line-height: 60px;
+    line-height: 75px;
     font-size: 1.5em;
     text-align: center;
     transition: 0.5s;
-    color: #fff;
+    color: white;
 }
+/* Configuração de altura da animação ativa específica dos ícones do footer. */
 
-/*FAZ O ÍCONE SUBIR QUANDO ATIVO*/
-.navegacao ul li.active a .icon
+footer ul li.active a .icon
 {
     transform: translateY(-35px);
 }
+/* Configuração de tamanho e cor específica dos textos do footer. */
 
-.navegacao ul li a .text
+footer ul li a .text
 {
     position: absolute;
-    color: #fff;
+    color: white;
     font-weight: 400;
     font-size: 0.75em;
     letter-spacing: 0.05em;
@@ -333,43 +326,43 @@ footer {
     opacity: 0;
     transform: translateY(20px);
 }
+/* Configuração de altura da animação ativa específica dos texto do footer. */
 
-/*FAZ O TEXTO APARECER E SUBIR QUANDO ATIVO*/
-.navegacao ul li.active a .text
+footer ul li.active a .text
 {
     opacity: 1;
     transform: translateY(10px);
 }
+/* Configuração de tamanho, cor, borda e tempo de animação do indicador. */
 
-/*CONFIGURAÇÃO DA BOLA*/
+
 .indicator
 {
     position: absolute;
-    margin-left: 12px;
-    margin-right: 7px;
-    width: 65px;
-    height: 65px;
-    top: -60%;
+    width: 75px;
+    height: 75px;
+    top: -50%;
     background: #093F61;
     border-radius: 50%;
-    border: 5px solid #fff;
+    border: 6px solid white;
     transition: 0.5s;
 }
 
-/*DESLOCAMENTO DA BOLA*/
-.navegacao ul li:nth-child(1).active ~ .indicator
+/* Distância percorrida pelo indicador */
+
+footer ul li:nth-child(1).active ~ .indicator
 {
-    transform: translateX(calc(90px * 0));/*0PX*/
+    transform: translateX(calc(75px * 0));
 }
-.navegacao ul li:nth-child(2).active ~ .indicator
+footer ul li:nth-child(2).active ~ .indicator
 {
-    transform: translateX(calc(90px * 1));/*90PX*/
+    transform: translateX(calc(75px * 1));
 }
-.navegacao ul li:nth-child(3).active ~ .indicator
+footer ul li:nth-child(3).active ~ .indicator
 {
-    transform: translateX(calc(90px * 2));/*180PX*/
+    transform: translateX(calc(75px * 2));
 }
-.navegacao ul li:nth-child(4).active ~ .indicator
+footer ul li:nth-child(4).active ~ .indicator
 {
-    transform: translateX(calc(90px * 3));/*270PX*/
+    transform: translateX(calc(75px * 3));
 }
