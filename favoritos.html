@@ -1,52 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorias</title>
-    <link rel="stylesheet" type="text/css" href="categorias.css">
+    <title>Favoritos</title>
+    <!--ICON NA GUIA-->
+    <link rel="icon" href="imagensTelaInicial/logo.png">
+    <link rel="stylesheet" href="css/estiloFavoritos.css">
 </head>
 <body>
-        <!-- Navbar da página. -->
+    <!--NAVBAR DE CIMA-->
     <nav>
-        <div class="esquerda"><img src="imagensTelaInicial/logoetexto.png" class="logo"></div>
-        Categorias
-        <div class="direita"><a href="carrinho.html"><img src="images/carrinho.png" class="carrinho"></a></div>
+        <img src="imagensTelaInicial/logoetexto.png" class="logo">
+        <h5>Favoritos</h5>
+        <div class="direita">
+            <a href="carrinho.html"><img src="imagensTelaInicial/carrinho.png" class="carrinho"></a>
+        </div>
     </nav>
-
-        <!-- Div que engloba os quadrados de categoria. -->
-    <div class="principal"> 
-            <div class="quadrados1"></div>
-            <div class="quadradosdireita1">
-            <a href="paginaprodutoslente.html">
-                <img class="seta" src="images/seta.png">
-            </a>
-            </div>
-        <div class="quadrado1"><i class="texto">Lentes de contato</i></div>
-            <div class="quadrados2"></div>
-            <a href="paginaprodutossol.html">
-            <div class="quadradosdireita2">
-                <img class="seta" src="images/seta.png">
-            </a>
-            </div>
-        <div class="quadrado2"><i class="texto">Óculos de Sol</i></div>
-            <div class="quadrados3"></div>
-            <div class="quadradosdireita3">
-            <a href="paginaprodutosgrau.html">
-                <img class="seta" src="images/seta.png">
-            </a>
-            </div>
-        <div class="quadrado3"><i class="texto">Óculos de grau</i></div>
-            <div class="quadrados4"></div>
-            <div class="quadradosdireita4">
-            <a href="paginaprodutosarmacao.html">
-                <img class="seta" src="images/seta.png">
-            </a>
-            </div>
-        <div class="quadrado4"><i class="texto">Armações</i></div>
-    </div>
-
     <!--NAVBAR DE BAIXO-->
     <footer>
         <div class="navegacao">
@@ -61,8 +32,8 @@
                     </a>
                 </li>
                 <!--CATEGORIAS-->
-                <li class="list active">
-                    <a href="#">
+                <li class="list">
+                    <a href="categorias.html">
                         <span class="icon">
                             <ion-icon name="grid-outline"></ion-icon>
                         </span>
@@ -70,7 +41,7 @@
                     </a>
                 </li>
                 <!--FAVORITOS-->
-                <li class="list">
+                <li class="list active"> <!--LIST ACTIVE DEFINE ONDE A BOLINHA DO NAV COMEÇA-->
                     <a href="favoritos.html">
                         <span class="icon">
                             <ion-icon name="bookmark-outline"></ion-icon>
@@ -79,7 +50,7 @@
                     </a>
                 </li>
                 <!--PERFIL-->
-                <li class="list"> <!--LIST ACTIVE DEFINE ONDE A BOLINHA DO NAV COMEÇA-->
+                <li class="list"> 
                     <a href="telaPerfil.html">
                         <span class="icon">
                             <ion-icon name="person-outline"></ion-icon>
