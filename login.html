@@ -18,19 +18,21 @@
     <div class="right-login">
     <div class="card-login">
         <h1>LOGIN</h1>
-        <!--Campo nome-->
-        <div class="textfield">
-            <label for="usuario">Nome</label>
-            <input type="text" name="Usuário" placeholder="digite o seu nome">
-        </div>
-        <!--Campo senha-->
-        <div class="textfield">
-            <label for="senha">Senha</label>
-            <input type="text" name="Senha" placeholder="digite a sua senha">
-        </div>
-        <!--Caso o usuario não estiver logado, ao clicar no botão ir à tela para cadastrar-se-->
-        <a href="cadastro.html">Não possui uma conta?</a>
-        <button class="btn-login">Entrar</button>
+        <form action="verifica.php" method="post">
+            <!--Campo nome-->
+            <div class="textfield">
+                <label for="usuario">Nome</label>
+                <input type="text" name="nome" placeholder="digite o seu nome">
+            </div>
+            <!--Campo senha-->
+            <div class="textfield">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="digite a sua senha">
+            </div>
+            <!--Caso o usuario não estiver logado, ao clicar no botão ir à tela para cadastrar-se-->
+            <a href="cadastro.html">Não possui uma conta?</a>
+            <button type="submit" class="btn-login">Entrar</button>
+        </form>
     </div>
 </div>
 </div>

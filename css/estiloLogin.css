@@ -3,8 +3,16 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;  /*Com esse comando qualquer largura que estiver sobrando, encolherá*/
 }
-/*Defini margin, top e left como 0*/
 
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Defini margin, top e left como 0*/
 body {
     margin: 0;
     top: 0;
