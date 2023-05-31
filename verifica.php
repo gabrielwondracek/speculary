@@ -23,5 +23,4 @@
     else {
         header("Location: login.html");
     }
-
 ?>
