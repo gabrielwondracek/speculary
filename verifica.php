@@ -1,6 +1,7 @@
 <?php
     $nome = $_POST["nome"];
     $senha = $_POST["senha"];
+    $mudaNome = $_POST["nomeDoUser"];
 
     include("conecta.php");
 
@@ -8,13 +9,16 @@
     $resultado = $comando->execute();
 
     $entrar = "n";
+    $mudaNome = $nome;
+
 
     while( $linhas = $comando->fetch()){
         $entrar = "s";
     }
 
     if($entrar == "s"){
-        header("Location: index.html");
+        header("Location: telaPerfil.html");
+
     }
     else {
         header("Location: login.html");
