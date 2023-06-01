@@ -120,6 +120,7 @@ footer {
 
 .navegacao ul li a .text
 {
+    font-family: 'Poppins', sans-serif;
     position: absolute;
     color: #fff;
     font-weight: 400;
