@@ -1,6 +1,3 @@
-
-/* Import de fonte. */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
@@ -24,6 +21,7 @@ body
 {
     justify-content: space-between;
     align-items: center;
+    
     display: flex;
     background-color: white;
     flex-direction: column;
@@ -58,9 +56,8 @@ nav
 }
 .direita
 {
-    margin-top: 18px;
     width: 33%;
-    height: 40px;
+    height: 60px;
     align-items: center;
     align-content: center;
     justify-content: right;
@@ -68,7 +65,8 @@ nav
 }
 .carrinho
 {
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-top: 17px;
     width: 40px;
     height: 40px;
 }
@@ -89,7 +87,7 @@ nav
 */
 .quadrados1
 {
-    width: 360px;
+    width: 100%;
     height: 120px;
     background-color: rgb(5, 5, 5);
     position: absolute;
@@ -100,7 +98,7 @@ nav
 .quadrado1
 {
     position: absolute;
-    width: 360px;
+    width: 100%;
     height: 120px;
     background-color: #093F61;
     background-image: url(images/lentes.jpg);
@@ -244,19 +242,8 @@ nav
 .seta
 {
     width: 20px;
-
 }
 
-/* Configuração de tamanho, posicionamento e cor de fundo do footer. */
-footer{
-    width: 360px;
-    height: 70px;
-    background-color: #093F61;
-    position: relative;    
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
 /* Tamanho, posicionamento e cor de texto do footer. */
 .texto
 {
@@ -267,25 +254,49 @@ footer{
     position: absolute;
     z-index: 2;
 }
-/* Configurações geral do posicionamento dos ícones e texto do footer. */
-footer ul
-{
-    display: flex;
-    width: 300px;
+
+/*CONFIGURAÇÃO DA NAVBAR DE BAIXO*/
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
-/* Configuração de posicionamento dos ícones e texto do footer.. */
-footer ul li
+/*NAVBAR DE BAIXO*/
+.navegacao
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 360px;
+    height: 70px;
+    background-color: #093F61;
+    position: relative;    
+    justify-content: space-around;
+    display: flex;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.navegacao ul
+{
+    display: flex;
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 360px;
+}
+
+.navegacao ul li
 {
     position: relative;
     list-style: none;
-    width: 100px;
+    width: 360px;
     height: 60px;
     z-index: 1;
 }
 
-/* Configuração de posicionamento específica dos ícones do footer. */
-footer ul li a
+.navegacao ul li a
 {
     position: relative;
     display: flex;
@@ -296,29 +307,27 @@ footer ul li a
     text-align: center;
     font-weight: 500;
 }
-/* Configuração de tamanho e cor específica dos ícones do footer. */
-footer ul li a .icon
+
+.navegacao ul li a .icon
 {
     position: relative;
     display: block;
-    line-height: 75px;
+    line-height: 80px;
     font-size: 1.5em;
     text-align: center;
     transition: 0.5s;
-    color: white;
+    color: #fff;
 }
-/* Configuração de altura da animação ativa específica dos ícones do footer. */
 
-footer ul li.active a .icon
+.navegacao ul li.active a .icon
 {
     transform: translateY(-35px);
 }
-/* Configuração de tamanho e cor específica dos textos do footer. */
 
-footer ul li a .text
+.navegacao ul li a .text
 {
     position: absolute;
-    color: white;
+    color: #fff;
     font-weight: 400;
     font-size: 0.75em;
     letter-spacing: 0.05em;
@@ -326,43 +335,41 @@ footer ul li a .text
     opacity: 0;
     transform: translateY(20px);
 }
-/* Configuração de altura da animação ativa específica dos texto do footer. */
 
-footer ul li.active a .text
+.navegacao ul li.active a .text
 {
     opacity: 1;
     transform: translateY(10px);
 }
-/* Configuração de tamanho, cor, borda e tempo de animação do indicador. */
-
 
 .indicator
 {
     position: absolute;
+    margin-left: 7px;
+    margin-right: 7px;
     width: 75px;
     height: 75px;
     top: -50%;
     background: #093F61;
     border-radius: 50%;
-    border: 6px solid white;
+    border: 6px solid #fff;
     transition: 0.5s;
 }
 
-/* Distância percorrida pelo indicador */
-
-footer ul li:nth-child(1).active ~ .indicator
+/*DESLOCAMENTO DA BOLA*/
+.navegacao ul li:nth-child(1).active ~ .indicator
 {
-    transform: translateX(calc(75px * 0));
+    transform: translateX(calc(90px * 0));/*0PX*/
 }
-footer ul li:nth-child(2).active ~ .indicator
+.navegacao ul li:nth-child(2).active ~ .indicator
 {
-    transform: translateX(calc(75px * 1));
+    transform: translateX(calc(90px * 1));/*90PX*/
 }
-footer ul li:nth-child(3).active ~ .indicator
+.navegacao ul li:nth-child(3).active ~ .indicator
 {
-    transform: translateX(calc(75px * 2));
+    transform: translateX(calc(90px * 2));/*180PX*/
 }
-footer ul li:nth-child(4).active ~ .indicator
+.navegacao ul li:nth-child(4).active ~ .indicator
 {
-    transform: translateX(calc(75px * 3));
+    transform: translateX(calc(90px * 3));/*270PX*/
 }
