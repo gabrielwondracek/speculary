@@ -104,8 +104,8 @@ nav {
 }
 .produtos
 {
-    width: 160px;
-    height: 160px;
+    width: 130px;
+    height: 130px;
     background-color: #093F61;
     justify-content: center;
     align-items: center;
@@ -121,7 +121,7 @@ nav {
 }
 .imagens
 {
-    width: 156px;
-    height: 156px;
+    width: 126px;
+    height: 126px;
 }
 /*NAVBAR DE BAIXO*/
