@@ -17,7 +17,7 @@
     }
 
     if($entrar == "s"){
-        header("Location: telaPerfil.html");
+        header("Location: telaPerfil.php");
 
     }
     else {

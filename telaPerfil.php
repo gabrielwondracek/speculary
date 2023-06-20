@@ -1,3 +1,19 @@
+ <!--PHP-->
+ <?php
+    include("conecta.php");
+
+    $comando = $pdo->prepare("SELECT * FROM clientes");
+    $resultado = $comando->execute();
+    
+    $nomeUser = "login";
+
+    while ($linhas = $comando->fetch() )
+    {
+        $nomeUser = $linhas["nome"]; 
+    }
+    
+    $nomeUser = strtoupper($nomeUser)[0] . substr($nomeUser, 1);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -21,7 +37,7 @@
         <a href="login.html">
         <div class="login">  
             <img src="imagensTelaPerfil/perfil1.jpg">
-            <p name="nomeDoUser">Login</p>
+            <p name="nomeDoUser"><?php echo($nomeUser)?></p><!--EXIBIR NOME DO USUARIO-->
         </div>
         </a>
         <!--SETOR SOBRE-->
