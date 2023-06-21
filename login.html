@@ -28,9 +28,12 @@
                 <input type="text" name="nome" placeholder="digite o seu nome">
             </div>
             <!--Campo senha-->
-            <div class="textfield">
+            <div class="textfieldSenha">
                 <label for="senha">Senha</label>
-                <input type="password" name="senha" placeholder="digite a sua senha">
+                <div class="senhaOlho">
+                    <input type="password" name="senha" placeholder="digite uma senha" id="senha">
+                    <img style="width: 25px; height: 25px; margin-left: 2px;" onclick="mudarOlho()" src="imagensCadastro/olhoFechado.png" id="olho">
+                </div>
             </div>
             <!--Caso o usuario não estiver logado, ao clicar no botão ir à tela para cadastrar-se-->
             <a href="cadastro.html">Não possui uma conta?</a>
@@ -39,6 +42,6 @@
     </div>
 </div>
 </div>
-      
 </body>
+<script src="mudarOlho.js"></script>
 </html>

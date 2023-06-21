@@ -4,12 +4,14 @@
 
     $comando = $pdo->prepare("SELECT * FROM clientes");
     $resultado = $comando->execute();
-    
-    $nomeUser = "login";
 
     while ($linhas = $comando->fetch() )
     {
         $nomeUser = $linhas["nome"]; 
+    }
+
+    if (empty($nomeUser)) {
+        $nomeUser = "login";
     }
     
     $nomeUser = strtoupper($nomeUser)[0] . substr($nomeUser, 1);

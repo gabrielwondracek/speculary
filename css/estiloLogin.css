@@ -127,6 +127,51 @@ body * {
     box-sizing: border-box;
 }
 
+.textfieldSenha{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;/*inicia da div*/
+    justify-content: center;
+    margin: 10px 0px;
+    color:#f0ffffde;
+}
+
+/*Define o estilo do input*/
+.textfieldSenha .senhaOlho > input{
+    width: 85%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #0e4c73;
+    font-size: 12px;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+    color: #f0ffffde;
+}
+
+/*Definindo o estilo das legendas nome, senha e e-mail*/
+.textfieldSenha .senhaOlho > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+/*Estilizando input*/
+.textfieldSenha .senhaOlho > input::placeholder{
+    color: #f0ffff94;
+}
+
+.textfieldSenha .senhaOlho button {
+    background: none;
+    border: none;
+}
+
+.senhaOlho {
+    flex-direction: row;
+}
+
+
 /*Estilo de 'Não possui uma conta?'*/
 .card-login a {
     color:  white;
