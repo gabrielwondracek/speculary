@@ -169,6 +169,7 @@ body * {
 
 .senhaOlho {
     flex-direction: row;
+    width: 100%;
 }
 
 

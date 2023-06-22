@@ -60,6 +60,7 @@ body {
 
 /*Define a largura da imagem*/
 .mulheroculos2{
+    margin-top: 30px;
     margin-left: 50px;
     width: 45vw;
 }
@@ -178,6 +179,7 @@ body {
 
 .senhaOlho {
     flex-direction: row;
+    width: 100%;
 }
 
 /*Definindo estilos do botão para o usuário ao concluir login, entrar na sua conta*/
@@ -221,6 +223,7 @@ body {
         height: auto;
     }
     .mulheroculos2{
+        margin-top: 80px;
         width: 45vw;
     }
     .card-login{
