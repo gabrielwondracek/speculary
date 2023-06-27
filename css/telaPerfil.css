@@ -59,6 +59,27 @@ main img {
 main .login {
     display: flex;
     align-items: center;
+    flex-direction: row;
+}
+
+main .login  a{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100px;
+}
+
+main .login .sair{
+    margin-left: 150px;
+    width: fit-content;
+}
+
+main .login .sair img{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 50%;
+    transform: translateY(10%);
 }
 
 /*ALINHAMENTO DO TEXTO E IMAGEM DENTRO DA DIV SOBRE */
@@ -67,16 +88,40 @@ main .sobre {
     align-items: center;
 }
 
+main .sobre  a{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+}
+
 /*ALINHAMENTO DO TEXTO E IMAGEM DENTRO DA DIV TERMOS */
 main .termos {
     display: flex;
     align-items: center;
 }
 
+main .termos  a{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+}
+
 /*ALINHAMENTO DO TEXTO E IMAGEM DENTRO DA DIV PRIVACIDADE */
 main .privacidade {
     display: flex;
     align-items: center;
+}
+
+main .privacidade  a{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
 }
 
 /*CONFIGURAÇÃO DA NAVBAR DE BAIXO*/

@@ -2,7 +2,7 @@
  <?php
     include("conecta.php");
 
-    $comando = $pdo->prepare("SELECT * FROM clientes");
+    $comando = $pdo->prepare("SELECT * FROM clientes WHERE logado=1");
     $resultado = $comando->execute();
 
     while ($linhas = $comando->fetch() )
@@ -36,33 +36,36 @@
     <!--CONTEUDO DO SITE-->
     <main>
         <!--SETOR LOGIN-->
-        <a href="login.html">
         <div class="login">  
-            <img src="imagensTelaPerfil/perfil1.jpg">
-            <p name="nomeDoUser"><?php echo($nomeUser)?></p><!--EXIBIR NOME DO USUARIO-->
+            <a href="login.html">
+                <img src="imagensTelaPerfil/perfil1.jpg">
+                <p name="nomeDoUser"><?php echo($nomeUser)?></p><!--EXIBIR NOME DO USUARIO-->
+            </a>
+            <div class="sair">
+                <img src="imagensTelaPerfil/exit.png">
+            </div>
         </div>
-        </a>
         <!--SETOR SOBRE-->
-        <a href="telaQuemsomos.html">
         <div class="sobre">
-            <img src="imagensTelaPerfil/perfil2.jpg">
-            <p>Quem somos</p>
+            <a href="telaQuemsomos.html">
+                <img src="imagensTelaPerfil/perfil2.jpg">
+                <p>Quem somos</p>
+            </a>
         </div>
-        </a>
         <!--SETOR TERMOS-->
-        <a href="telaTermos.html">
         <div class="termos">
-            <img src="imagensTelaPerfil/perfil3.jpg">
-            <p>Termos de uso</p>
+            <a href="telaTermos.html">
+                <img src="imagensTelaPerfil/perfil3.jpg">
+                <p>Termos de uso</p>
+            </a>
         </div>
-        </a>
         <!--SETOR PRIVACIDADE-->
-        <a href="telaPrivacidade.html">
         <div class="privacidade">
-            <img src="imagensTelaPerfil/perfil4.jpg">
-            <p>Privacidade do usuário</p>
+            <a href="telaPrivacidade.html">
+                <img src="imagensTelaPerfil/perfil4.jpg">
+                <p>Privacidade do usuário</p>
+            </a>
         </div>
-        </a>
     </main>
 
     <!--NAVBAR DE BAIXO-->
