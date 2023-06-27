@@ -75,8 +75,8 @@ main .login .sair{
 }
 
 main .login .sair img{
-    width: 35px;
-    height: 35px;
+    width: 31px;
+    height: 31px;
     position: relative;
     top: 50%;
     transform: translateY(10%);

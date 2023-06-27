@@ -10,3 +10,4 @@ function mudarOlho() {
         senha.type = "password";
     }
 }
+

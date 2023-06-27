@@ -8,12 +8,40 @@
     while ($linhas = $comando->fetch() )
     {
         $nomeUser = $linhas["nome"]; 
+        $logado = $linhas['logado'];
+    }
+
+    if (empty($logado)) {
+        $logado = 0;
     }
 
     if (empty($nomeUser)) {
-        $nomeUser = "login";
+        $nomeUser = "Login";
     }
-    
+
+    if (empty($resultadoSai)) {
+        $resultadoSai = false;
+    }
+
+    echo("<script>
+        function sair() {
+            resultadoSair = echo($resultadoSai);
+            resultadoSair = confirm('Quer mesmo sair?');
+            window.location.href='telaPerfil.php?resultadoSair='+resultadoSair;
+        }
+        </script>");
+
+        
+
+    if (empty($resultadoSai)) {
+        $resultadoSai = false;
+    }
+
+    if ($resultadoSai == true) {
+        $comando = $pdo->prepare("UPDATE clientes SET logado=0");
+        $resultado = $comando->execute();
+    }
+
     $nomeUser = strtoupper($nomeUser)[0] . substr($nomeUser, 1);
 ?>
 <!DOCTYPE html>
@@ -41,9 +69,18 @@
                 <img src="imagensTelaPerfil/perfil1.jpg">
                 <p name="nomeDoUser"><?php echo($nomeUser)?></p><!--EXIBIR NOME DO USUARIO-->
             </a>
-            <div class="sair">
-                <img src="imagensTelaPerfil/exit.png">
-            </div>
+            <?php
+                if ($logado == 1){
+                    echo'<div class="sair">
+                        <img src="imagensTelaPerfil/exit.png" onclick="sair()">
+                    </div>';
+                }
+                else {
+                    echo'<div class="sair" style="display: none;">
+                        <img src="imagensTelaPerfil/exit.png" onclick="sair()">
+                    </div>';
+                }
+            ?>
         </div>
         <!--SETOR SOBRE-->
         <div class="sobre">
