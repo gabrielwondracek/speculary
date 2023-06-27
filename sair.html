@@ -8,13 +8,72 @@
     <link rel="icon" href="imagensTelaInicial/logo.png">
     <link rel="stylesheet" href="css/telaPerfil.css">
 </head>
+<style>
+    body{
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    main{
+        left: 0;
+        top: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: -80px;
+        background-color: #fff;
+    }
+
+    main h4 {
+        font-size: 35px;
+        text-align: center;
+        width: 100%;
+        color: #093F61;
+        font-weight: bolder;
+    }
+
+    form {
+        margin: 0;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .botoes button{
+        font-size: 25px;
+        width: 140px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        color: #fff;
+        background-color: #093F61;
+    }
+
+    .botaoCancel{
+        margin-left: 10px;
+    }
+
+</style>
 <body>
     <main>
-        <form action="sair.php" method="post">
-            <h4>Deseja realmente sair?</h4>
-            <button>Sair</button>
-        </form>
-        <button onclick="cancel()">Cancelar</button>
+        <h4>Deseja realmente sair?</h4>
+        <div class="botoes">
+            <form action="sair.php" method="post">
+                <button>Sair</button>
+            </form>
+            <button class="botaoCancel" onclick="cancel()">Cancelar</button>
+        </div>
     </main>
 </body>
 </html>

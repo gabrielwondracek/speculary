@@ -9,10 +9,15 @@
     {
         $nomeUser = $linhas["nome"]; 
         $logado = $linhas['logado'];
+        $adm = $linhas['adm'];
     }
 
     if (empty($logado)) {
         $logado = 0;
+    }
+
+    if (empty($adm)) {
+        $adm = 0;
     }
 
     if (empty($nomeUser)) {
@@ -86,6 +91,17 @@
                 <p>Privacidade do usuário</p>
             </a>
         </div>
+        <?php
+                if ($adm == 1){
+                    echo"
+                    <div class='privacidade'>
+                        <a onclick='irAdm()'>
+                            <img src='imagensTelaPerfil/admin.jpg'>
+                            <p>Tela de administrador</p>
+                        </a>
+                    </div>";
+                }
+            ?>
     </main>
 
     <!--NAVBAR DE BAIXO-->

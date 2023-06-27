@@ -6,7 +6,7 @@
     $senha = $_POST["senha"];
     $logado = 0;
 
-    $comando = $pdo->prepare("INSERT INTO clientes VALUES('$nome','$email','$senha',$logado)");
+    $comando = $pdo->prepare("INSERT INTO clientes(nome,email,senha,logado) VALUES('$nome','$email','$senha',$logado)");
     $resultado = $comando->execute();
 
     //Para voltar no forms

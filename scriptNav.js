@@ -11,3 +11,7 @@ const list = document.querySelectorAll('.list');
     function sair() {
         window.location.href = 'sair.html'
     }
+
+    function irAdm() {
+        window.location.href = 'loginAdmin.php'
+    }
