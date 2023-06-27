@@ -7,3 +7,7 @@ const list = document.querySelectorAll('.list');
     }
     list.forEach((item) =>
     item.addEventListener('click',activeLink));
+
+    function sair() {
+        window.location.href = 'sair.html'
+    }

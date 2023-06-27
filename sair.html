@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sair</title>
+    <!--ICON NA GUIA-->
+    <link rel="icon" href="imagensTelaInicial/logo.png">
+    <link rel="stylesheet" href="css/telaPerfil.css">
+</head>
+<body>
+    <main>
+        <form action="sair.php" method="post">
+            <h4>Deseja realmente sair?</h4>
+            <button>Sair</button>
+        </form>
+        <button onclick="cancel()">Cancelar</button>
+    </main>
+</body>
+</html>
+<script>
+    
+    function cancel() {
+        window.location.href = 'telaPerfil.php'
+    }
+</script>
