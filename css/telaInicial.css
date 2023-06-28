@@ -97,9 +97,9 @@ nav h5 {
   .card img {
     border: solid 1.5px;
     border-radius: 5px;
-    min-width: 95px;
+    min-width: 80px;
     min-height: 80px;
-    max-width: 95px;
+    max-width: 80px;
     max-height: 80px;
   } 
 

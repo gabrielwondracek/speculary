@@ -33,7 +33,7 @@
             </div>
   
             <input class="button" type="submit"
-                     name="login" value="Entrar como Adm">
+                     name="login" value="Entrar como Admin">
         </div>
     </form>
 </body>
