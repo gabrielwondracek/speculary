@@ -15,6 +15,7 @@
 </head>
   
 <body>
+<img src="imagensCadastro/setaespeculary.jpg" class="seta" onclick="voltar()">
     <form action="validate.php" method="post">
         <div class="login-box">
             <h1>Login</h1>
@@ -36,5 +37,9 @@
         </div>
     </form>
 </body>
-  
 </html>
+<script>
+    function voltar(){
+        window.location.href = 'telaPerfil.php'
+    }
+</script>

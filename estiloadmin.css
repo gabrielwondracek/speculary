@@ -10,6 +10,17 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/*Configuração do tamanho da seta*/ 
+.seta{
+    position: relative;
+    top: 10%;
+    left: -42%;
+    width: 45px;
+    height: 45px;
+    margin-top: 8px;
+}
+
 .div1{
     width: 80%;
     font-size: 15px;

@@ -15,3 +15,15 @@ const list = document.querySelectorAll('.list');
     function irAdm() {
         window.location.href = 'loginAdmin.php'
     }
+
+    function irSobre(){
+        window.location.href = 'telaQuemSomos.html'
+    }
+
+    function irTermos(){
+        window.location.href = 'telaTermos.html'
+    }
+
+    function irPrivacidade(){
+        window.location.href = 'telaPrivacidade.html'
+    }

@@ -41,7 +41,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /*AJUSTES DO COUNTEUDO PRINCIPAL DA PÁGINA*/

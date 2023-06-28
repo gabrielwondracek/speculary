@@ -60,6 +60,7 @@ main .login {
     display: flex;
     align-items: center;
     flex-direction: row;
+    width: 100%;
 }
 
 main .login  a{

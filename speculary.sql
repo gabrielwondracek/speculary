@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16/05/2023 às 03:36
+-- Tempo de geração: 28/06/2023 às 04:44
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -30,17 +30,40 @@ SET time_zone = "+00:00";
 CREATE TABLE `clientes` (
   `nome` varchar(45) DEFAULT NULL,
   `email` varchar(45) DEFAULT NULL,
-  `senha` varchar(45) DEFAULT NULL
+  `senha` varchar(45) DEFAULT NULL,
+  `logado` tinyint(1) NOT NULL,
+  `adm` tinyint(1) NOT NULL,
+  `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `clientes`
 --
 
-INSERT INTO `clientes` (`nome`, `email`, `senha`) VALUES
-('asd', 'asd', 'asdasd'),
-('', '', ''),
-('sadasdad', 'asdadadwad', 'awdfawfawf');
+INSERT INTO `clientes` (`nome`, `email`, `senha`, `logado`, `adm`, `id`) VALUES
+('gabriel', 'gabihw.2005@gmail.com', '123', 0, 1, 1),
+('a', '', '', 0, 0, 4),
+('adasdad', '', '', 0, 0, 5);
+
+--
+-- Índices para tabelas despejadas
+--
+
+--
+-- Índices de tabela `clientes`
+--
+ALTER TABLE `clientes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT para tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `clientes`
+--
+ALTER TABLE `clientes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
      <!--ICON NA GUIA-->
      <link rel="icon" href="imagensTelaInicial/logo.png">
-    <link rel="stylesheet" href="css/telaPerfil.css">
 </head> 
+<img src="imagensCadastro/setaespeculary.jpg" class="seta" onclick="voltar()">
 <h2>Painel do Administrador</h2>
 <table class="div1" border='solid'>
     <thead>
@@ -59,3 +59,8 @@
         }
         </script>
 </table>
+<script>
+    function voltar(){
+        window.location.href = 'loginAdmin.php'
+    }
+</script>

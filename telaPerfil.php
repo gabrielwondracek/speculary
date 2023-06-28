@@ -50,7 +50,7 @@
             <?php
                 if ($logado == 1){
                     echo"
-                    <a>
+                    <a href='#'>
                         <img src='imagensTelaPerfil/perfil1.jpg'>
                         <p name='nomeDoUser'> $nomeUser </p><!--EXIBIR NOME DO USUARIO-->
                     </a>
@@ -71,25 +71,19 @@
             ?>
         </div>
         <!--SETOR SOBRE-->
-        <div class="sobre">
-            <a href="telaQuemsomos.html">
-                <img src="imagensTelaPerfil/perfil2.jpg">
-                <p>Quem somos</p>
-            </a>
+        <div class="sobre" onclick="irSobre()">
+            <img src="imagensTelaPerfil/perfil2.jpg">
+            <p>Quem somos</p>
         </div>
         <!--SETOR TERMOS-->
-        <div class="termos">
-            <a href="telaTermos.html">
-                <img src="imagensTelaPerfil/perfil3.jpg">
-                <p>Termos de uso</p>
-            </a>
+        <div class="termos" onclick="irTermos()">
+            <img src="imagensTelaPerfil/perfil3.jpg">
+            <p>Termos de uso</p>
         </div>
         <!--SETOR PRIVACIDADE-->
-        <div class="privacidade">
-            <a href="telaPrivacidade.html">
-                <img src="imagensTelaPerfil/perfil4.jpg">
-                <p>Privacidade do usuário</p>
-            </a>
+        <div class="privacidade" onclick="irPrivacidade()">
+            <img src="imagensTelaPerfil/perfil4.jpg">
+            <p>Privacidade do usuário</p>
         </div>
         <?php
                 if ($adm == 1){

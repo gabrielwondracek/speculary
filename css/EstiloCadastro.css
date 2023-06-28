@@ -2,6 +2,7 @@
 *{
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box; /*Com esse comando qualquer largura que estiver sobrando, encolherá*/
+    cursor: default;
 }
 
 form {
@@ -60,7 +61,7 @@ body {
 
 /*Define a largura da imagem*/
 .mulheroculos2{
-    margin-top: 20px;
+    margin-top: 8px;
     margin-left: 50px;
     width: 45vw;
 }
@@ -223,7 +224,6 @@ body {
         height: auto;
     }
     .mulheroculos2{
-        margin-top: 80px;
         width: 45vw;
     }
     .card-login{
