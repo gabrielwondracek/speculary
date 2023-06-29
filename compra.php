@@ -1,3 +1,6 @@
+<?php
+    include("conecta.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -95,7 +98,7 @@
                 $dados_imagem = $linhas["foto"];
                 $id_produto = $linhas["id_produto"];
                 $i = base64_encode($dados_imagem);
-      echo'<p><a>$nome</a><a>$qtd</a><span class="price">$preco</span></p>';
+      echo("<p><a>$nome</a><a>$qtd</a><span class='price'>$preco</span></p>");
       }?>
       <hr>
     </div>
