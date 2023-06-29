@@ -57,7 +57,7 @@ $nomefoto = "armacao3";
                           }
                           ?>
                     </form>
-                    <form action="paginadeprodutosarmacao1.php" method="post">
+                    <form action="paginadeprodutosdesol4.php" method="post">
                       <button style="scale: 70%; font-size: 15px;" type="submit" name="favoritar" class=button>Favoritar &nbsp <i class="fa-solid fa-heart" style="color: #eb0505;"></i></button>
                       <?php
                           if(isset($_POST["favoritar"]))
