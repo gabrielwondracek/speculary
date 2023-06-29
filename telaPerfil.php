@@ -122,7 +122,7 @@
                 </li>
                 <!--FAVORITOS-->
                 <li class="list">
-                    <a href="favoritos.html">
+                    <a href="favoritos.php">
                         <span class="icon">
                             <ion-icon name="bookmark-outline"></ion-icon>
                         </span>
